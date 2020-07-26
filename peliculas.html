@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>Peliculas</title>
+    <link rel="shortcut icon" type="imagenes/logo" href="imagenes/logo.jpg">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">THE FLASH</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-expanded="false" aria-label="Alternar Menu">
+                 <span class="navbar-toggler-icon"></span>
+                 </button>
+                <div class="collapse navbar-collapse" id="menuNavegacion">
+                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                             <a href="personajes.html" class="nav-link" id="personajes">PERSONAJES</a>
+                         </li>
+                                <!--Submenu de temporadas-->
+                             <li class="nav-item dropdown">
+                                <a href="#temporadas" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+                                      TEMPORADAS
+                                  </a>
+                                  <div class="dropdown-menu bg-dark"aria-labelledby="navbarDropdown">
+                                    <a href="temporada1.html" class="dropdown-item text-white">TEMPORADA 1</a>
+                                    <a href="temporada2.html" class="dropdown-item text-white">TEMPORADA 2</a>
+                                    <a href="temporada3.html" class="dropdown-item text-white">TEMPORADA 3</a>
+                                    <a href="temporada4.html" class="dropdown-item text-white">TEMPORADA 4</a>
+                                    <a href="temporada5.html" class="dropdown-item text-white">TEMPORADA 5</a>
+                                    <a href="temporada6.html" class="dropdown-item text-white">TEMPORADA 6</a>
+                                 </div>
+                        </li>
+                     <li class="nav-item dropdown">
+                         <a href="peliculas.html" class="nav-link">PELICULAS</a>
+                     </li>
+                 </ul>
+           </div>
+    </nav>
+    <!--Carrusel de flash-->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="imagenes/bg1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagenes/bg2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagenes/bg3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+           
+                     <!-----------------------------------TITULO PRINCIPAL------------------------------------->
+    </header>
+    <div class="row">
+           <div class="col-12">
+               <div  class="py-4 border-bottom" id="in-2">
+                   <h1 class="text-center">PELICULAS</h1>
+               </div>
+           </div>
+       </div>
+       <!--peliculas-->
+    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+        <div class="card">
+            <img class="card-img-top" src="imagenes/paradox.jpg" height="300" width="300">
+            <div class="card-body">
+                <h3 class="card-title">Liga de la justicia</h3>
+                <p class="card-text">La paradoja del tiempo</p>
+                <a href="https://cuevana3.video/3360/liga-de-la-justicia-la-paradoja-del-tiempo" class="btn btn-sm btn-primary" target="_blank">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+        <div class="card">
+            <img class="card-img-top" src="imagenes/lego.jpg" height="300" width="300">
+            <div class="card-body">
+                <h3 class="card-title">Lego DC comics</h3>
+                <p class="card-text">The Flash</p>
+                <a href="https://cuevana3.video/3502/lego-dc-comics-super-heroes-the-flash" class="btn btn-sm btn-primary" target="_blank">Ver</a>
+            </div>
+        </div>
+    </div>
+      
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+<style>
+body {
+    background:#1e2b38 ;
+}
+</style>
